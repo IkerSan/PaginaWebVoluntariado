@@ -48,7 +48,7 @@
         <p class="modal-card-title">Inicia Sesión</p>
         <label for="modal-toggle" class="delete" aria-label="close"></label>
       </header>
-      <div class="modal-card-body">
+      <div class="modal-card-body" >
         <div class="columns">
           <form>
             <div class="field">
@@ -56,14 +56,18 @@
               <div class="control has-icons-left has-icons-right">
                 <input class="input is-success" type="text" id="username" placeholder="Ej: JuanGarcía21">
                 <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                <p class="help is-danger" id="error-msg-usuario">Solo se permiten letras y números</p>
               </div>
+              <script src="usuario.js"></script>
             </div>
             <div class="field">
               <label class="label">Contraseña</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="password" id="password" name="password" placeholder="******" required>
+                <input class="input is-success" type="password" id="contra" name="contra" placeholder="******" required>
                 <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                <p class="help is-danger" id="error-msg-contra">Debe tener mínimo 6 caracteres</p>
               </div>
+              <script src="contra.js"></script>
             </div>
             <div class="field is-grouped">
               <div class="control">
@@ -72,6 +76,9 @@
             </div>
             <p id="error"></p>
           </form>
+          <div id="bienvenida" class="notification is-success is-light">
+            ¡Bienvenido!
+          </div>
         </div>
       </div>
       <footer class="modal-card-foot is-primary">
@@ -99,7 +106,7 @@
     </div>
   </section>
   <section>
-    <div class="container">
+    <div class="container fade-in">
       <div class="columns is-mobile is-multiline-mobile">
         <div class="column is-0-mobile is-one-quarter-desktop mt-6 mr-3">
           <figure class="image is-2by3">
@@ -118,7 +125,7 @@
     </div>
   </section>
   <section class="section">
-    <div id="queHacemos" class="container">
+    <div id="queHacemos" class="container fade-in">
       <h1 class="title has-text-centered">¿Qué hacemos?</h1>
       <div class="content has-text-centered">
         <p class="is-size-5"></p>
@@ -219,19 +226,19 @@
   </section>
 
   <nav class="level">
-    <div class="level-item has-text-centered">
+    <div class="level-item has-text-centered fade-in">
       <div>
         <p class="heading">Nº de voluntariados realizados</p>
         <p class="title">98</p>
       </div>
     </div>
-    <div class="level-item has-text-centered">
+    <div class="level-item has-text-centered fade-in">
       <div>
         <p class="heading">Nº Voluntarios</p>
         <p class="title">23</p>
       </div>
     </div>
-    <div class="level-item has-text-centered">
+    <div class="level-item has-text-centered fade-in">
       <div>
         <p class="heading">Voluntariados programados</p>
         <p class="title">4</p>
@@ -242,7 +249,7 @@
   <footer class="footer has-background-light mt-6">
     <div class="container">
       <div class="columns">
-        <div class="column is-three-fifths-desktop">
+        <div class="column is-three-fifths-desktop fade-in">
           <h2 class="title is-4">Contacto</h2>
           <p><span class="negrita">Correo:</span> <a class="has-text-primary" href="mailto:iryna_pavlenko@cuatrovientos.org">iryna_pavlenko@cuatrovientos.org</a></p>
           <p><span class="negrita">Número de teléfono:</span> 948 12 41 29</p>
@@ -262,7 +269,7 @@
             </a>
           </div>
         </div>
-        <div class="column is-two-fifths">
+        <div class="column is-two-fifths fade-in">
           <iframe class="has-ratio" id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2995058267966!2d-1.66242902438858!3d42.82428680564762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5092855cefdac7%3A0xab7c62765f5209e2!2sCuatrovientos%20Centro%20Integrado!5e0!3m2!1ses!2ses!4v1739182180408!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
