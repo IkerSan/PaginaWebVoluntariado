@@ -46,26 +46,29 @@
                         <div class="field">
                             <label class="label" for="contrasena">Contraseña</label>
                             <div class="control has-icons-left">
-                                <input class="input is-success" id="contrasena" type="password" placeholder="******" required>
+                                <input class="input is-success" id="contra" type="password" placeholder="******" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
+                                <p class="help is-danger" id="error-msg-contra">Debe tener al menos 6 caracteres</p>
                             </div>
+                            <script src="contra.js"></script>                            
                         </div>
                     </div>
                     <div class="column">
                         <div class="field">
                             <label class="label" for="confirmarContrasena">Confirmar Contraseña</label>
                             <div class="control has-icons-left">
-                                <input class="input is-success" id="confirmarContrasena" type="password" placeholder="******" required>
+                                <input class="input is-success" id="confcontra" type="password" placeholder="******" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                 </span>
+                                <p class="help is-danger" id="error-msg-confcontra">Debe tener al menos 6 caracteres</p>
                             </div>
+                            <script src="confirmarContra.js"></script>
                         </div>
                     </div>
                 </div>
-
                 <div class="field">
                     <label class="label" for="curso">Selecciona tu curso</label>
                     <div class="control">
